@@ -11,8 +11,8 @@ const Counter = ({id}) => {
     <div className="counter" key={id}>
         <h4>Counter</h4>
         <p>{count}</p>
-        <button onClick={() => handleRemove()}>-</button>
-        <button onClick={() => handleAdd()}>+</button>
+        <button className="adjust-button" onClick={() => handleRemove()}>-</button>
+        <button className="adjust-button" onClick={() => handleAdd()}>+</button>
     </div>
   )
 }
