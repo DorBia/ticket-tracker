@@ -5,8 +5,8 @@ const SearchBar = ({handleInput}) => {
   return (
     <div className="search-bar">
         <form onSubmit={(e) => e.preventDefault()}>
-            <label htmlFor="search">Search</label>
-            <input type="text" id="search" onChange={handleInput}/>
+            {/* <label htmlFor="search">Search</label> */}
+            <input type="text" placeholder="Search here" onChange={handleInput}/>
         </form>
     </div>
   )

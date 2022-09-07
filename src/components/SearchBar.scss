@@ -1,3 +1,16 @@
-.search-bar input{
-    border-radius: 20px;
+@use "../assets/sass/variables" as *;
+
+.search-bar input {
+    text-align: center;
+    width: 30%;
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: -3px 3px 5px $color-third;
+    margin: 30px 20px;
+
+    &:focus {
+        outline: none;
+    }
 }

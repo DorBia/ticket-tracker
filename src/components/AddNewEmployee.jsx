@@ -29,9 +29,7 @@ const AddNewEmployee = ({addEmployee, setIsActive}) => {
                 <span>Employee Role</span>
                 <input type="text" required onChange={(e) => setRole(e.target.value)}/>
             </label>
-            <section>
-                <button>Submit</button>
-            </section>
+            <button className="submit-button">Submit</button>
         </form>
     </div>
   )

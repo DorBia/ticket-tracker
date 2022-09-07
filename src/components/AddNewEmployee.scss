@@ -1,3 +1,5 @@
+@use "../assets/sass/variables" as *;
+
 .add-new-container {
     position: fixed;
     top: 0;
@@ -11,9 +13,10 @@
     padding: 30px;
     max-width: 480px;
     margin: 15% auto;
-    background: crimson;
+    background: $color-secondary;
     border-radius: 30px;
     position: relative;
+    box-shadow: -10px 10px 20px $color-third;
 }
 
 .new-employee-form label,
@@ -25,6 +28,8 @@
     padding: 10px;
     box-sizing: border-box;
     font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
 }
 
 .close {
@@ -33,4 +38,22 @@
     top: 0;
     font-size: 1.3rem;
     cursor: pointer;
+}
+
+.new-employee-form input {
+    box-shadow: -1px 1px 3px $color-third;
+    &:focus {
+        outline: none;
+    }
+}
+
+.submit-button {
+    padding: 10px 25px;
+    background-color: $color-fifth;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: -1px 1px 3px $color-third;
 }
