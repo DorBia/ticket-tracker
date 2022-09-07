@@ -2,11 +2,11 @@ import Counter from "./Counter"
 
 import "./Card.scss"
 
-const Card = ({names}) => {
+const Card = ({employees}) => {
 
   return (
     <div className="card-container"> 
-        {names.map((event) => (
+        {employees.map((event) => (
             <div key={event.id} className="card">
                 <h2>{event.name}</h2>
                 <h3>{event.role}</h3>

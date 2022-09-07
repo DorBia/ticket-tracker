@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./AddNewEmployee.scss"
 
-const AddNewEmployee = ({addEmployee, changeState}) => {
+const AddNewEmployee = ({addEmployee, setIsActive}) => {
     const [name, setName] = useState("")
     const [role, setRole] = useState("")
 
@@ -14,13 +14,13 @@ const AddNewEmployee = ({addEmployee, changeState}) => {
             id: Math.floor(Math.random() * 10000)
         }
         addEmployee(employee)
-        changeState(false)
+        setIsActive(false)
     }
 
   return (
     <div className="add-new-container">
         <form className="new-employee-form" onSubmit={handleSubmit}>
-            <p className="close" onClick={() => changeState(false)}>x</p>
+            <p className="close" onClick={() => setIsActive(false)}>x</p>
             <label>
                 <span>Employee Name</span>
                 <input type="text" required onChange={(e) => setName(e.target.value)}/>
