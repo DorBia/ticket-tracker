@@ -23,12 +23,16 @@ function App() {
     return employee.name.toLowerCase().includes(searchText) || employee.role.toLowerCase().includes(searchText);
   });
 
+  const handleDelete = (id) => {
+    setEmployees(employees.filter((e) => e.id !== id))
+  }
+
   return (
     <div className="app">
       <Header setIsActive={setIsActive}/>
       {isActive && <AddNewEmployee addEmployee={addEmployee} setIsActive={setIsActive}/>}
-      {!searchText && <Card employees={employees}/>}
-      {searchText && <Card employees={filteredEmployees}/>}
+      {!searchText && <Card employees={employees} handleDelete={handleDelete}/>}
+      {searchText && <Card employees={filteredEmployees} handleDelete={handleDelete}/>}
       <SearchBar handleInput={handleInput}/>
     </div>
   );

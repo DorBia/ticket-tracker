@@ -2,6 +2,7 @@
 
 .add-new-container {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,7 +42,7 @@
 }
 
 .new-employee-form input {
-    box-shadow: -1px 1px 3px $color-third;
+    box-shadow: $shadow-small;
     &:focus {
         outline: none;
     }
@@ -55,5 +56,5 @@
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
-    box-shadow: -1px 1px 3px $color-third;
+    box-shadow: $shadow-small;
 }
