@@ -12,7 +12,6 @@ const Counter = ({id}) => {
         <button className="adjust-button" onClick={() => handleRemove()}>-</button>
         <p className="counter__number">{count}</p>
         <button className="adjust-button" onClick={() => handleAdd()}>+</button>
-        {/* <h4>Counter</h4> */}
     </div>
   )
 }

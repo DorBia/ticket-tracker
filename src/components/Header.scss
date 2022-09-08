@@ -20,18 +20,19 @@
 @media screen and (min-width: 768px) {
     .header {
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .add-button {
         width: 10rem;
-        margin: 1rem 15% 1.5rem 10%;
+        margin: 1rem 0 1.5rem 10%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .add-button {
         width: 13rem;
-        margin: 1rem 20% 1.5rem 10%;
+        margin: 1rem 0 1.5rem 10%;
         font-size: 1.1rem;
     }
 }

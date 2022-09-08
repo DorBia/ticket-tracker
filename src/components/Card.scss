@@ -53,3 +53,30 @@
     top: 0;
     cursor: pointer;
 }
+
+.pagination {
+    // width: 100%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+   
+    .pagination a {
+        padding: 8px;
+        border-radius: 7px;
+        border: 2px solid $color-fifth;
+        color: $color-fifth;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            background-color: $color-fifth;
+        }
+    }
+
+    .active a {
+        color: white;
+        background-color: $color-fifth;
+}
