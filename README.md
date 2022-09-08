@@ -23,7 +23,9 @@ Simple ticket tracker, which let's you track how many tickets each person has. I
 
 ## 🛠 Getting Started <a name = "getting_started"></a>
 
-To open the website you need to download the repo, and then open terminal in the repo's folder. Run the following command: 
+You can either go to [this site](https://dorbia.github.io/ticket-tracker/) and it will work in your browser without having to do anything, or if you want to have it in your localhost, you can continue reading, to find out what to do.
+
+To open the website in your localhost you need to download the repo, and then open terminal in the repo's folder. Run the following command: 
 ### `npm install`
 to make it install every node modules you will need - npm will find it on it's own thanks to the dependencies. Once it's installed, you can run the command:
 ### `npm start`
