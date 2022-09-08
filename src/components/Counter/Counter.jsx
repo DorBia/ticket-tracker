@@ -9,9 +9,9 @@ const Counter = ({id}) => {
 
   return (
     <div className="counter" key={id}>
-        <button className="adjust-button" onClick={() => handleRemove()}>-</button>
+        <button className="counter__button" onClick={() => handleRemove()}>-</button>
         <p className="counter__number">{count}</p>
-        <button className="adjust-button" onClick={() => handleAdd()}>+</button>
+        <button className="counter__button" onClick={() => handleAdd()}>+</button>
     </div>
   )
 }

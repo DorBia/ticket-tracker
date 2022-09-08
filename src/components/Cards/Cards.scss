@@ -1,6 +1,7 @@
-@use "../assets/sass/variables" as *;
+@use "../../assets/sass/variables" as *;
 
-.card-container {
+.cards-container {
+    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -16,21 +17,18 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
-    @media screen and (min-width: 1500px) {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    @media screen and (min-width: 1650px) {
-        width: 1650px;
+    @media screen and (min-width: 1520px) {
+        width: 1500px;
         margin: auto;
     }
+
 }
 
 .card {
     background: $color-primary;
     box-shadow: $shadow-primary;
-    width: 90%;
+    width: 95%;
     max-width: 245px;
-    text-align: center;
     margin: 5% auto;
     display: flex;
     flex-direction: column;
@@ -39,36 +37,40 @@
     height: 300px;
     color: $color-fifth;
     position: relative;
+
+    &__delete {
+        position: absolute;
+        right: 8%;
+        top: 0;
+        cursor: pointer;
+
+        &:hover {
+            font-size: 1.8rem;
+            transform: translateY(-20px);
+        }
+    }
+
+    &__role {
+        color: $color-third;
+        font-family: $font-secondary;
+        font-size: 1.2rem;
+    }
 }
 
-.role {
-    color: $color-third;
-    font-family: $font-secondary;
-    font-size: 1.2rem;
-}
-
-.delete {
-    position: absolute;
-    right: 8%;
-    top: 0;
-    cursor: pointer;
-}
 
 .pagination {
-    // width: 100%;
-    height: 40px;
     list-style: none;
     display: flex;
-    justify-content: space-around;
     margin: 20px auto;
   }
    
     .pagination a {
-        padding: 8px;
+        padding: 8px 10px;
         border-radius: 7px;
         border: 2px solid $color-fifth;
         color: $color-fifth;
         cursor: pointer;
+        margin: 3px;
 
         &:hover {
             color: white;

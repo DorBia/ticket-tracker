@@ -1,10 +1,10 @@
-import "./Header.scss"
-import SearchBar from "./SearchBar"
+import "./Nav.scss"
+import SearchBar from "../SearchBar/SearchBar"
 
 const Header = ({setIsActive, handleInput}) => {
   return (
     <div className="header">
-        <button className="add-button" onClick={() => setIsActive(true)}>Add employee</button>
+        <button className="header__add-button" onClick={() => setIsActive(true)}>Add employee</button>
         <h1>Ticket Tracker</h1>
         <SearchBar handleInput={handleInput}/>
     </div>
