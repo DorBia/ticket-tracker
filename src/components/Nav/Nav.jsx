@@ -8,7 +8,7 @@ const Header = ({setIsActive, handleInput}) => {
         <h1>Ticket Tracker</h1>
         <SearchBar handleInput={handleInput}/>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

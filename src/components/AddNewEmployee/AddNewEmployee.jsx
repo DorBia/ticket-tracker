@@ -2,9 +2,10 @@ import { useState } from "react"
 import "./AddNewEmployee.scss"
 
 const AddNewEmployee = ({addEmployee, setIsActive}) => {
-    const [name, setName] = useState("")
-    const [role, setRole] = useState("")
+    const [name, setName] = useState("");
+    const [role, setRole] = useState("");
 
+    //create new employee after submitting the form and close the window
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -32,7 +33,7 @@ const AddNewEmployee = ({addEmployee, setIsActive}) => {
             <button className="add-new__submit">Submit</button>
         </form>
     </div>
-  )
+  );
 }
 
 export default AddNewEmployee

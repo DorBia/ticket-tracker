@@ -1,4 +1,4 @@
-import "./SearchBar.scss"
+import "./SearchBar.scss";
 
 const SearchBar = ({handleInput}) => {
 
@@ -6,7 +6,7 @@ const SearchBar = ({handleInput}) => {
     <div className="search-bar">
       <input type="text" placeholder="Search here" onChange={handleInput}/>
     </div>
-  )
+  );
 }
 
-export default SearchBar
+export default SearchBar;
